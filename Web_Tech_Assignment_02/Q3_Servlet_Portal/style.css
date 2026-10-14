@@ -1,0 +1,39 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Arial, sans-serif; background: #f5f6ff; color: #1e1b4b; line-height: 1.5; }
+.site-header { background: #3730a3; color: #fff; padding: 16px 6%; border-bottom: 3px solid #6366f1; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
+.header-inner h1 { font-size: 20px; }
+.who { display: flex; align-items: center; gap: 14px; font-size: 13.5px; }
+.btn-out { background: #e11d48; color: #fff; padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 12px; }
+.main-area { width: 92%; max-width: 1100px; margin: 28px auto; }
+.heading { margin-bottom: 24px; }
+.heading h2 { color: #3730a3; font-size: 20px; }
+.heading p { color: #6b7280; font-size: 13.5px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.profile-card { background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e0e7ff; box-shadow: 0 4px 10px rgba(55,48,163,.07); display: flex; flex-direction: column; }
+.photo-strip { background: #4f46e5; padding: 22px 0; display: flex; justify-content: center; }
+.round-photo, .round-fallback { width: 88px; height: 88px; border-radius: 50%; border: 3px solid #fff; }
+.round-photo { object-fit: cover; }
+.round-fallback { background: #e0e7ff; color: #3730a3; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 700; }
+.card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+.card-body h3 { font-size: 16px; color: #3730a3; margin-bottom: 4px; }
+.roll-tag { align-self: flex-start; background: #eef2ff; color: #3730a3; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 4px; margin-bottom: 8px; }
+.course-line { font-size: 12.5px; color: #475569; margin-bottom: 4px; }
+.mail-line { font-size: 11.5px; color: #6b7280; margin-bottom: 14px; }
+.card-foot { margin-top: auto; border-top: 1px solid #eef2ff; padding-top: 10px; }
+.btn-doc { display: block; text-align: center; padding: 8px 12px; background: #eef2ff; color: #3730a3; border: 1px solid #c7d2fe; border-radius: 5px; text-decoration: none; font-size: 12px; font-weight: 600; }
+.btn-doc:hover { background: #e0e7ff; }
+.no-doc { display: block; text-align: center; font-size: 11.5px; color: #9ca3af; }
+.signin-page { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #3730a3, #4f46e5); }
+.signin-card { background: #fff; padding: 30px; border-radius: 12px; width: 100%; max-width: 380px; box-shadow: 0 12px 28px rgba(0,0,0,.25); }
+.signin-head { text-align: center; margin-bottom: 20px; }
+.signin-head h2 { color: #3730a3; font-size: 20px; }
+.signin-head p { color: #6b7280; font-size: 12.5px; }
+.entry { margin-bottom: 14px; }
+.entry label { display: block; font-size: 12.5px; font-weight: 600; margin-bottom: 5px; }
+.entry input { width: 100%; padding: 9px 11px; border: 1px solid #c7d2fe; border-radius: 5px; font-size: 13px; }
+.btn-signin { width: 100%; padding: 10px; background: #4f46e5; color: #fff; border: none; border-radius: 5px; font-size: 13.5px; font-weight: 600; cursor: pointer; }
+.btn-signin:hover { background: #3730a3; }
+.flash { padding: 8px 12px; border-radius: 4px; font-size: 12px; margin-bottom: 12px; text-align: center; }
+.flash-bad { background: #fee2e2; color: #991b1b; }
+.flash-good { background: #d1fae5; color: #065f46; }

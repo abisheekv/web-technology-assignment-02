@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="reg-card" id="regCard">
+      <h1>User Registration Form</h1>
+      <p class="sub-text">Enter your details below to register.</p>
+
+      <form id="registerForm" novalidate>
+        <div class="grid-two">
+          <div class="field">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" placeholder="Enter your full name">
+            <span class="err-text" id="fullNameErr"></span>
+          </div>
+          <div class="field">
+            <label for="emailAddr">Email Address *</label>
+            <input type="text" id="emailAddr" placeholder="Enter your email">
+            <span class="err-text" id="emailAddrErr"></span>
+          </div>
+          <div class="field">
+            <label for="mobileNo">Mobile Number *</label>
+            <input type="text" id="mobileNo" placeholder="Enter 10-digit mobile number" maxlength="12">
+            <span class="err-text" id="mobileNoErr"></span>
+          </div>
+          <div class="field">
+            <label>Gender *</label>
+            <div class="radio-row" id="genderGroup">
+              <label><input type="radio" name="gender" value="Male"> Male</label>
+              <label><input type="radio" name="gender" value="Female"> Female</label>
+              <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <span class="err-text" id="genderErr"></span>
+          </div>
+          <div class="field">
+            <label for="pwd">Password *</label>
+            <input type="password" id="pwd" placeholder="Create a strong password">
+            <span class="err-text" id="pwdErr"></span>
+          </div>
+          <div class="field">
+            <label for="pwd2">Confirm Password *</label>
+            <input type="password" id="pwd2" placeholder="Re-enter your password">
+            <span class="err-text" id="pwd2Err"></span>
+          </div>
+          <div class="field">
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob">
+            <span class="err-text" id="dobErr"></span>
+          </div>
+          <div class="field">
+            <label for="cityList">City *</label>
+            <select id="cityList">
+              <option value="">Select your city</option>
+              <option>Coimbatore</option>
+              <option>Chennai</option>
+              <option>Madurai</option>
+              <option>Tiruchirappalli</option>
+              <option>Salem</option>
+            </select>
+            <span class="err-text" id="cityListErr"></span>
+          </div>
+        </div>
+
+        <div class="terms-row">
+          <label><input type="checkbox" id="agreeBox"> I agree to the Terms &amp; Conditions *</label>
+          <span class="err-text" id="agreeBoxErr"></span>
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn-main">Register</button>
+          <button type="reset" class="btn-soft" id="resetBtn">Reset</button>
+        </div>
+      </form>
+
+      <div class="success-box" id="successBox">
+        <div class="tick">&#10003;</div>
+        <h2>Registration Successful!</h2>
+        <p class="welcome" id="welcomeLine"></p>
+        <p>Your registration has been completed successfully.</p>
+      </div>
+    </div>
+  </div>
+  <script src="validation.js"></script>
+</body>
+</html>
